@@ -1,0 +1,879 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #2a2a2a;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Шапка */
+.header {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    border-bottom: 1px solid #e6e8ea;
+    z-index: 50;
+}
+
+.header-wrap {
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #314067;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #EA3527;
+}
+
+.nav {
+    display: flex;
+    gap: 22px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #5a5a5a;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #EA3527;
+}
+
+.burger-btn {
+    display: none;
+    background: none;
+    border: 1px solid #d2d5d9;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+.btn-red {
+    background-color: #EA3527;
+    color: #ffffff;
+}
+
+.btn-red:hover {
+    background-color: #D42B1D;
+}
+
+.btn-border {
+    background-color: transparent;
+    color: #EA3527;
+    border: 2px solid #EA3527;
+}
+
+.btn-border:hover {
+    background-color: #FDEDEB;
+}
+
+.header-btn {
+    padding: 9px 18px;
+    font-size: 14px;
+}
+
+.full-w {
+    width: 100%;
+}
+
+/* Главный экран */
+.hero {
+    padding: 70px 0;
+    background-color: #f6f7f8;
+    border-bottom: 1px solid #e6e8ea;
+}
+
+.hero-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #FDEDEB;
+    color: #EA3527;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+}
+
+.hero-sub {
+    font-size: 18px;
+    color: #5a5a5a;
+    margin-bottom: 28px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.hero-panel {
+    flex: 1;
+    max-width: 460px;
+    background: #ffffff;
+    border: 1px solid #d2d5d9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.panel-top {
+    background-color: #314067;
+    color: #ffffff;
+    padding: 12px 16px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-online {
+    background-color: #1FA463;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.panel-body {
+    padding: 18px;
+}
+
+.client-box {
+    border: 1px solid #e6e8ea;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.client-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.bonus-tag {
+    color: #1FA463;
+    font-weight: 700;
+}
+
+.cashier-tip {
+    background-color: #FDEDEB;
+    border-left: 4px solid #EA3527;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.tip-title {
+    font-weight: 700;
+    color: #EA3527;
+    margin-bottom: 4px;
+}
+
+/* Стандартные секции */
+.section {
+    padding: 65px 0;
+}
+
+.bg-gray {
+    background-color: #f6f7f8;
+    border-top: 1px solid #e6e8ea;
+    border-bottom: 1px solid #e6e8ea;
+}
+
+.bg-dark {
+    background-color: #314067;
+    color: #ffffff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    text-align: center;
+    color: #5a5a5a;
+    max-width: 650px;
+    margin: 0 auto 40px;
+    font-size: 16px;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-light {
+    color: #d2d5d9;
+}
+
+/* Сетки */
+.row-3 {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.row-4 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.problem-card,
+.info-card,
+.case-card,
+.price-card {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #e6e8ea;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.feature-card {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #e6e8ea;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.num-circle {
+    width: 38px;
+    height: 38px;
+    background-color: #FDEDEB;
+    color: #EA3527;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.feature-icon {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.problem-card h3,
+.feature-card h3,
+.info-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.problem-card p,
+.feature-card p,
+.info-card p {
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+/* Шаги */
+.step-card {
+    flex: 1;
+    background-color: #24304F;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.step-label {
+    display: inline-block;
+    font-size: 12px;
+    color: #FBD9D5;
+    font-weight: 700;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.step-card h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.step-card p {
+    font-size: 13px;
+    color: #d2d5d9;
+}
+
+/* Кейсы */
+.stats-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.stat-box {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #e6e8ea;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.stat-box b {
+    display: block;
+    font-size: 32px;
+    color: #314067;
+}
+
+.stat-box span {
+    font-size: 13px;
+    color: #5a5a5a;
+}
+
+.case-num {
+    font-size: 36px;
+    font-weight: 700;
+    color: #EA3527;
+    margin-bottom: 8px;
+}
+
+.case-card p {
+    font-size: 14px;
+    color: #5a5a5a;
+    margin-bottom: 16px;
+}
+
+.case-author {
+    font-size: 13px;
+    font-weight: 700;
+    color: #314067;
+    border-top: 1px solid #e6e8ea;
+    padding-top: 12px;
+}
+
+/* Тарифы */
+.popular-card {
+    border: 2px solid #EA3527;
+    position: relative;
+}
+
+.pop-label {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: #EA3527;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 12px;
+}
+
+.price-val {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 12px 0 18px;
+}
+
+.price-val span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5a5a5a;
+}
+
+.price-list {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.price-list li {
+    font-size: 14px;
+    color: #5a5a5a;
+    margin-bottom: 10px;
+    padding-left: 18px;
+    position: relative;
+}
+
+.price-list li::before {
+    content: "•";
+    color: #EA3527;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.price-subnote {
+    text-align: center;
+    font-size: 13px;
+    color: #5a5a5a;
+    margin-top: 24px;
+}
+
+/* FAQ */
+.faq-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #ffffff;
+    border: 1px solid #e6e8ea;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 18px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-plus {
+    font-size: 20px;
+    color: #EA3527;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 20px 18px;
+    font-size: 14px;
+    color: #5a5a5a;
+    border-top: 1px solid #f1f2f4;
+    padding-top: 12px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-plus {
+    transform: rotate(45deg);
+}
+
+/* Форма */
+.form-box {
+    max-width: 480px;
+    margin: 0 auto;
+    background: #ffffff;
+    color: #2a2a2a;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #d2d5d9;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.form-msg {
+    display: none;
+    margin-top: 12px;
+    padding: 10px;
+    background-color: #E8F6EE;
+    color: #1FA463;
+    border-radius: 6px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Подвал */
+.footer {
+    background-color: #24304F;
+    color: #9a9a9a;
+    padding: 30px 0;
+    font-size: 13px;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Плавающие виджеты */
+.fixed-btns {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 60;
+}
+
+.circle-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.call-btn {
+    background-color: #1FA463;
+}
+
+.chat-btn {
+    background-color: #EA3527;
+}
+
+/* Чат */
+.chat-box {
+    display: none;
+    position: fixed;
+    bottom: 135px;
+    right: 20px;
+    width: 300px;
+    background: #ffffff;
+    border: 1px solid #d2d5d9;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    z-index: 70;
+    overflow: hidden;
+}
+
+.chat-top {
+    background-color: #314067;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-top button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.chat-messages {
+    height: 190px;
+    padding: 12px;
+    overflow-y: auto;
+    background-color: #f6f7f8;
+    font-size: 13px;
+}
+
+.msg {
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.bot-msg {
+    background: #ffffff;
+    border: 1px solid #e6e8ea;
+}
+
+.user-msg {
+    background: #EA3527;
+    color: #ffffff;
+    text-align: right;
+}
+
+.chat-input-wrap {
+    display: flex;
+    padding: 8px;
+    border-top: 1px solid #e6e8ea;
+}
+
+.chat-input-wrap input {
+    flex: 1;
+    border: 1px solid #d2d5d9;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.chat-input-wrap button {
+    margin-left: 6px;
+    background: #EA3527;
+    color: #ffffff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Модальное окно звонка */
+.modal-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 80;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.modal-window {
+    background: #ffffff;
+    max-width: 400px;
+    width: 100%;
+    padding: 26px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.modal-window h3 {
+    margin-bottom: 8px;
+}
+
+.modal-window p {
+    font-size: 13px;
+    color: #5a5a5a;
+    margin-bottom: 16px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Правовые документы, чекбоксы и Cookie */
+.checkbox-group {
+    margin-bottom: 16px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 12px;
+    color: #5a5a5a;
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+.checkbox-label input {
+    width: auto;
+    margin-top: 2px;
+}
+
+.checkbox-label a {
+    color: #EA3527;
+    text-decoration: underline;
+}
+
+.footer-legal {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 12px;
+}
+
+.footer-legal a {
+    color: #9a9a9a;
+    text-decoration: underline;
+}
+
+.footer-legal a:hover {
+    color: #ffffff;
+}
+
+.legal-window {
+    max-width: 600px;
+}
+
+.legal-content {
+    max-height: 360px;
+    overflow-y: auto;
+    font-size: 13px;
+    color: #444444;
+    line-height: 1.6;
+    margin-top: 12px;
+    padding-right: 8px;
+}
+
+.legal-content p {
+    margin-bottom: 10px;
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    right: 90px;
+    max-width: 620px;
+    background: #ffffff;
+    border: 1px solid #d2d5d9;
+    border-radius: 10px;
+    padding: 14px 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    z-index: 65;
+}
+
+.cookie-text {
+    font-size: 12px;
+    color: #2a2a2a;
+    line-height: 1.4;
+}
+
+.cookie-text a {
+    color: #EA3527;
+    text-decoration: underline;
+}
+
+.cookie-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* Адаптив под мобильные устройства */
+@media (max-width: 768px) {
+    .hero-wrap,
+    .row-3,
+    .row-4,
+    .stats-row {
+        flex-direction: column;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        flex-direction: column;
+        padding: 16px;
+        border-bottom: 1px solid #e6e8ea;
+        gap: 12px;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    .burger-btn {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .cookie-banner {
+        right: 16px;
+        bottom: 85px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
